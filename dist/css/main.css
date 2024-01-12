@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.material-symbols-outlined {
+  font-size: 3em !important;
+  color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+button {
+  background-color: black;
+  border: none;
+}
+
+.menuTab {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  width: 10vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  width: 90vw;
+  display: flex;
+  padding: 2vh 5vw;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+header .material-symbols-outlined {
+  color: white;
+}
+
+.home {
+  color: white;
+  width: 100vw;
+  height: 80vh;
+  padding-top: 20vh;
+  background-image: url("../../images/homeBackground.jpg");
+  background-size: cover;
+}
+.home .text {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  height: calc(100% - 20vh);
+  justify-content: center;
+}
+.home h1 {
+  font-size: 6vh;
+}
+.home h2 {
+  font-size: 3vh;
+}
+
+.presentation {
+  padding: 4vh 10vw;
+  text-align: center;
+}
+.presentation p {
+  padding-top: 1vh;
+  font-size: 2vh;
+  transform: translateY(10vh);
+}
+.presentation h1 {
+  font-size: 5vh;
+  transform: translateX(-20vh);
+  filter: blur(10px);
+}
+
+#chiffres h1 {
+  transform: translateX(30vh);
+}
+
+.show p {
+  transition: all 500ms;
+  transform: translateY(0);
+}
+.show h1 {
+  transition: all 1s;
+  filter: blur(0);
+  transform: translateX(0) !important;
+}
+
+.backArrow {
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 90vh;
+}
+.content h1 {
+  font-size: 5vh;
+  padding-bottom: 10vh;
+}
+.content li {
+  font-size: 3vh;
+  padding: 1vh 0;
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-100%);
+  filter: blur(5px);
+}
+.content li:nth-child(2) {
+  transition-delay: 200ms;
+}
+.content li:nth-child(3) {
+  transition-delay: 300ms;
+}
+.content .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}/*# sourceMappingURL=main.css.map */
