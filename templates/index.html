@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <script defer src="{{ url_for('static', filename='main.js') }}"></script>
+    <title>Rebout Wine</title>
+</head>
+<body>
+    <div class="menuTab">
+        <button onclick="hide()"><span class="material-symbols-outlined backArrow">arrow_back</span></button>
+        <div class=content>
+            <h1>Rebout'wine</h1>
+            <ul>
+                <li><a href="#pres">Présentation</a></li>
+                <li><p>Producteurs</p></li>
+                <li><a href="{{url_for('login')}}">Login</a></li>
+                <li><a href="{{url_for('register')}}">Inscription</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contentTab">
+        <header>
+            <h1>Rebout'wine</h1>
+            <button onclick="show()"><span class="material-symbols-outlined">menu</span></button>
+        </header>
+        <section class="home">
+            <div class="text">
+                <h1>Rebout'wine</h1>
+                <h2>Adieu la bouteille de vin à usage unique</h2>
+            </div>
+        </section>
+        <section id="pres" class="presentation carte">
+            <h1>Nos points de collecte</h1>
+            <img src="../static/images/Carte_France.png" alt="">
+        </section>
+
+        <section class="presentation">
+            <h1>Chiffres</h1>
+            <div class="grilleChiffres">
+                <div id="chiffre">
+                    <h2>Bouteilles collectées</h2>
+                    <p>7800</p>
+                </div>
+                <div id="chiffre">
+                    <h2>Bouteilles vendues</h2>
+                    <p>1500</p>
+                </div>
+                <div id="chiffre">
+                    <h2>Producteurs</h2>
+                    <p>40</p>
+                </div>
+                <div id="chiffre">
+                    <h2>Prix</h2>
+                    <p>.€</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="presentation" id="projectDescription">
+            <h1>Présentation</h1>
+            <p>ReboutWine est bien plus qu'une entreprise. C'est une vision novatrice pour transformer la manière dont nous consommons et recyclons les bouteilles de vin. Notre système de consigne réinvente la durabilité dans l'industrie vinicole, offrant une solution écologique et économique.</p>
+        </section>
+        <section class="presentation" id="chiffres">
+            <h1>Comment ça marche ?</h1>
+            <p>Lors de l'achat d'une bouteille de vin, les clients versent une caution modeste. Une fois la bouteille vide, ils la retournent à n'importe quel point de collecte ReboutWine et reçoivent leur caution en retour. Les bouteilles sont ensuite nettoyées, réutilisées et remises en circulation, réduisant ainsi efficacement les déchets.</p>
+        </section>
+        <section class="presentation" id="financement">
+            <h1>Pourquoi ?</h1>
+            <p>Écologique : Réduire l'empreinte carbone en réduisant les déchets plastiques.
+                Économique : Les clients économisent sur le long terme en réutilisant les bouteilles.
+                Qualité : Les bouteilles réutilisées sont soigneusement nettoyées et inspectées pour garantir une qualité optimale.</p>
+        </section>
+    </div>
+</body>
+</html>

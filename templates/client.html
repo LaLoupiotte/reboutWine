@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='client.css') }}">
+    <title>Espace client</title>
+</head>
+    <body>
+        <div class="dashboard">
+            <h1>Espace client de {{ client }}</h1>
+            <div class="metrics">
+                <div class="metric">
+                    <h2>Bouteilles en circulation</h2>
+                    <p id="totalOrders">100</p>
+                </div>
+                <div class="metric">
+                    <h2>Bouteilles Collectées</h2>
+                    <p id="productsPurchased">50</p>
+                </div>
+                <div class="metric">
+                    <h2>Nombre total de bouteilles utilisées</h2>
+                    <p id="totalSpent">1000</p>
+                </div>
+            </div>
+        </div>
+   
+</body>
+</html>

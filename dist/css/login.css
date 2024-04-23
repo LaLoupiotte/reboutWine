@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.material-symbols-outlined {
+  font-size: 3em !important;
+  color: white;
+}
+
+.menuTab {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  width: 10vw;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  width: 90vw;
+  display: flex;
+  padding: 2vh 5vw;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+header .material-symbols-outlined {
+  color: white;
+}/*# sourceMappingURL=login.css.map */
